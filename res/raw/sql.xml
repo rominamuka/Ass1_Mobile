@@ -1,0 +1,26 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS employee (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+	fName VARCHAR(50), 
+	lName VARCHAR(50), 
+	title VARCHAR(50), 
+	dept VARCHAR(50), 
+	mgrId INTEGER,  
+	mobPhone VARCHAR(30))
+</statement>
+<statement>INSERT INTO employee VALUES(1,'Ferdi','Muka','Vice President', 'Management', NULL,'570-999-8888')</statement>
+<statement>INSERT INTO employee VALUES(2,'James','Lipo','Regional Manager','Management',1 ,'570-888-9999')</statement>
+<statement>INSERT INTO employee VALUES(3,'Endrit','Torona','Assistant Regional Manager','Management',2,'570-333-3333')</statement>
+<statement>INSERT INTO employee VALUES(4,'Jack','Hall','Assistant Regional Manager','Manage',2,'570-999-1212')</statement>
+<statement>INSERT INTO employee VALUES(5,'Pamela','Power','Receptionist','',2,'570-999-5555')</statement>
+<statement>INSERT INTO employee VALUES(6,'Annie','Marna','Senior Accountant','Accounting',2,'570-999-3232')</statement>
+<statement>INSERT INTO employee VALUES(7,'Marta','Malori','Accountant','Accounting',6,'570-111-2525')</statement>
+<statement>INSERT INTO employee VALUES(8,'Paulo','Coelho','Accountant','Accounting',6,'570-585-3333')</statement>
+<statement>INSERT INTO employee VALUES(9,'Bred','Buro','Quality Assurance','Customer Services',2,'333-8585')</statement>
+<statement>INSERT INTO employee VALUES(10,'Andi','Besuli','Sales Director','Sales',2,'Tirane','570-555-0000')</statement>
+<statement>INSERT INTO employee VALUES(11,'Fiona','Lama','Sales Representative','Sales',10,'570-888-6666')</statement>
+<statement>INSERT INTO employee VALUES(12,'Sisley','Hoti','Sales Representative','Sales',10,'570-777-6666')</statement>
+<statement>INSERT INTO employee VALUES(13,'Mimoza','Peri','Supplier Relations','Customer Services',2,'570-777-2222')</statement>
+<statement>INSERT INTO employee VALUES(14,'Klea','Bakiu','Customer Service Representative','Customer Services',2,'570-125-3666')</statement>
+</sql>
